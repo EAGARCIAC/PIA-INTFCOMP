@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #FFF;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 2;
+}
+
+.contenido-header{
+
+max-width: 1200px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+
+}
+
+.logo{
+
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.logo img{
+
+    width: 180px;
+    height: 100px;
+   
+}
+
+.menu{
+
+    height: 80px;
+
+}
+
+.menu nav{
+
+    height: 100%;
+}
+
+.menu nav ul{
+
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav ul li{
+
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-seleccionado:before{
+
+    content: "";
+    width: 100%;
+    height: 4px;
+   /*background: #46a2fd;*/ 
+    background: #472183;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+
+.menu nav ul li a{
+    color: #777777;
+    transition: color 300ms;
+    font-size: 18px;
+
+}
+
+.menu nav ul li a:hover{
+    
+    color: #472183;
+
+}
+
+.menu .texto-menu-seleccionado {
+
+color: #472183;
+}
+
+.menu nav ul li a i{
+    display: none;
+}
+
+#icono-menu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    font-size: 20px;
+    background: #eeeeeefa;
+    border-radius: 100%;
+    color: #787878;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  
+
+
+}
+
+#icono-menu:hover{
+    opacity: 0.8;
+}
+
+/*Portada*/
+
+.contenedor-portada{
+
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 80px;
+    background-image: url(../img/oa2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenedor-portada:before{
+
+    content: "";
+    width: 100%;
+    height: 100%;
+  /*  background: rgba(70, 162, 253, 0.65 );*/
+    background: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.contenedor-info-portada{
+
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+.contenedor-info-portada h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: #FFF;
+    margin-bottom: 20px;
+
+}
+
+.contenedor-info-portada p{
+color: #FFF;
+font-size: 20px;
+font-weight: 300;
+
+}
+
+/* Contenido del articulo*/
+
+.contenedor-contenido{
+
+width: 1200px;
+margin: auto;
+margin-top: 40px;
+display: flex;
+justify-content: center;
+
+}
+
+article{
+
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -30px black;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+article:before{
+    content: "";
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*background: #46a2fd ;*/
+    background: #472183;
+}
+
+article h1{
+
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 40px;
+
+}
+article p{
+
+    margin-top: 20px;
+    font-size: 18px;
+    color: #3c3c3c;
+    justify-content: center;
+}
+
+article img{
+
+    width: 50%;
+    height: 280px;
+    margin-top: 20px;
+    
+
+
+}
+
+article p.aboutus{
+
+    margin-top: 20px;
+    font-size: 18px;
+    color: #3c3c3c;
+
+
+
+}
+
+
+/*Aside*/
+
+.contenedor-aside aside{
+    width: 320px;
+    border-radius: 6px;
+    box-shadow: 0 0 20px -20px black;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-bottom: 40px;
+
+}
+
+
+
+.contenedor-aside img{
+    width: 100%;
+}
+
+.contenedor-aside h2,
+.contenedor-aside p{
+    margin-top: 20px;
+    padding: 0px 20px;
+
+}
+
+.contenedor-aside aside button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    background: #472183;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 5px;
+   
+
+}
+
+.contenedor-aside aside button:hover{
+    opacity: 0.9;
+
+}
+
+/* Responsive Desing*/
+
+@media screen and (max-width: 1220px){
+
+    .contenido-header,
+    .contenedor-contenido{
+        max-width: 1000px;
+        padding: 0 20px;
+
+    }
+}
+
+@media screen and (max-width: 1020px){
+
+.contenedor-contenido{
+    width: 100%;
+    flex-direction: column;
+}
+
+article{
+    box-shadow: 0 0 0 0;
+}
+
+.contenedor-aside{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-aside aside{
+    max-width: 300px;
+    margin: 10px;
+}
+
+}
+
+@media screen and (max-width: 800px) {
+
+    body{
+        overflow-x: hidden;
+
+    }
+
+    .contenedor-todo{
+        transition: all 300ms cubic-bezier(1,0,0,1);
+    }
+
+    .mover-contenedor-todo{
+        transform: translateX(300px);
+
+
+
+    }
+
+
+    .menu{
+        width: 0px;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        transform: translateX(-300px);
+        background: #FFF;
+        overflow: hidden;
+        box-shadow: 10px 0 20px -25px black;
+        transition: all 300ms cubic-bezier(1,0,0,1);
+
+    }
+
+    .mostrar-lateral{
+        width: 300px;
+        transform: translateX(0px);
+    }
+
+    .menu nav ul{
+        flex-direction: column;
+    }
+
+    .menu nav ul li{
+        max-width: 200px;
+        height: 50px;
+        justify-content: flex-start;
+
+    }
+
+    .menu-seleccionado:before{
+        width: 0;
+    }
+
+    .menu nav ul li a{
+
+        margin-top: 40px;
+        color: #858585;
+
+
+    }
+
+    .menu nav ul li a i{
+        width: 20px;
+        display: inline-block;
+        margin-right: 10px;
+        color: #472183;
+    }
+
+    #icono-menu{
+        display: flex;
+
+    }
+    
+
+}
+
+
+@media screen and (max-width: 650px){
+
+    .contenedor-aside{
+        flex-wrap: wrap;
+    }
+
+}
+    
+
+
